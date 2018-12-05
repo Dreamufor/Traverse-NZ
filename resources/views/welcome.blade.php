@@ -6,20 +6,20 @@
 
         <div id="demo" class="position-relative">
             <img src="{{ asset('img/home_bg.jpg') }}" style="width:100%">
-                    <div class="position-absolute" style="z-index: 2;left:20%;top:40%;">
+                    <div class="position-absolute" style="z-index: 2;left:35%;top:40%;">
                         {!! Form::open(['method' => 'GET', 'url' => '/posts', 'class' => 'form-inline mr-auto ml-auto', 'role' => 'search'])  !!}
 
-                            <div class="input-group" class="embed-responsive">
+                            <div class="input-group">
 
                                 <input class="form-control"
                                        name="search"
                                        type="text"
-                                       placeholder="Mt Cook"
+                                       placeholder="Mt Cook" style="padding: 30px 120px 30px 120px;"
                                 >
                                 <button
-                                    class="btn btn-dark input-group-append align-items-center"
+                                    class="btn btn-dark input-group-append align-items-center" style="width: 15%; "
                                 >
-                                    <i class="fas fa-search"
+                                    <i class="fa fa-search mr-auto ml-auto" style="font-size: 150%;"
                                     ></i>
                                 </button>
                             </div>
