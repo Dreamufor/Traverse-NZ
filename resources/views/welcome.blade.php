@@ -51,7 +51,7 @@
                         </a>
                         <div class="card-body">
                             <h5 class="card-title">
-                                <a href="{{ url('/posts/' . $post->id) }}">
+                                <a href="{{ url('/posts/' . $post->id) }}" class="alert-light">
                                 {{$post->title}}
                                 </a>
                             </h5>

@@ -18,14 +18,14 @@
                 <h5 class="text-uppercase">About</h5>
                 <ul class="list-unstyled">
                     <li class="">
-                        <a class="" href="{{ url('/admin') }}">Dashboard <span class="sr-only">(current)</span></a>
+                        <a class="alert-link alert-light" href="{{ url('/admin') }}">Dashboard</a>
                     </li>
 
                     <li class="">
-                        <a class="" href="{{url('/posts')}}">Posts</a>
+                        <a class="alert-link alert-light" href="{{url('/posts')}}">Posts</a>
                     </li>
                     <li class="">
-                        <a class="" href="{{url('/images')}}">Images</a>
+                        <a class="alert-link alert-light" href="{{url('/images')}}">Images</a>
                     </li>
                     {{--<li class="nav-item">--}}
                     {{--<a class="nav-link" href="#">Post your trip</a>--}}
@@ -34,10 +34,10 @@
                     {{--<a class="nav-link" href="#">My group</a>--}}
                     {{--</li>--}}
                     <li class="">
-                        <a class="" href="{{url('/posts')}}">Help</a>
+                        <a class="alert-link alert-light" href="{{url('/posts')}}">Help</a>
                     </li>
                     <li class="">
-                        <a class="" href="#">About us</a>
+                        <a class="alert-link alert-light" href="#">About us</a>
                     </li>
                 </ul>
             </div>
@@ -54,7 +54,7 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container text-center">
         &copy; {{ date('Y') }}. <a href="https://traverse.bai.uno">{{ config('app.name', 'Laravel') }}</a>
         <br/>
     </div>
