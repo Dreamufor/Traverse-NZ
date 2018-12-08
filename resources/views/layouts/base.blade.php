@@ -58,7 +58,7 @@
         <main >
             @yield('content')
         </main>
-
+        <hr>
         @include('layouts.footer')
 
     </body>

@@ -5,11 +5,11 @@
  {{--* Date: 1/10/18--}}
  {{--* Time: 10:25 AM--}}
  {{--*/--}}
-<footer class="page-footer font-small black pt-4 container mt-5" style="background-color:white;">
-    <hr>
-    <div class="container-fluid text-center text-md-left">
-        <div class="row">
-            <div class="col-md-6 mt-md-0 mt-3">
+<footer class="page-footer font-small" style="background-color:#f8fafc;">
+    <div class="text-center text-md-left">
+        <div class="row" style="padding: 0% 16%;">
+
+            <div class="col-md-6 mt-md-0">
                 <h5 class="text-uppercase">{{ config('app.name', 'Laravel') }}</h5>
                 <p>We are a place to help you finding your travel partners.</p>
             </div>
@@ -51,13 +51,14 @@
 
 
             </div>
+            <div class="container text-center">
+                &copy; {{ date('Y') }}. <a href="https://traverse.bai.uno">{{ config('app.name', 'Laravel') }}</a>
+                <br/>
+            </div>
         </div>
     </div>
 
-    <div class="container text-center">
-        &copy; {{ date('Y') }}. <a href="https://traverse.bai.uno">{{ config('app.name', 'Laravel') }}</a>
-        <br/>
-    </div>
+
 
 </footer>
 
