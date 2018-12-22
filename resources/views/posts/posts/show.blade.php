@@ -29,30 +29,32 @@
                         <br/>
                         <br/>
 
-                        <div class="table-responsive">
-                            <table class="table">
+                        <div class="align-content-center">
+                            <h4 class="text-center"> {{ $post->title }}</h4>
+                            @foreach($post->images as $img)
+                               <div class="mr-auto ml-auto"> <img
+                                        class="img-fluid img-thumbnail "
+                                        style="width: auto; height: 300px;"
+
+                                        @if (substr($img->url, 0,5)==='https' )
+
+                                        src="{{$img->url}}"
+                                        @else
+                                        src="{{ asset($img->url)}}"
+                                        @endif
+                                ></div>
+                            @endforeach
+                            <table class="table mt-2 table-light">
                                 <tbody>
-                                    <tr>
-                                        <th>ID</th><td>{{ $post->id }}</td>
-                                    </tr>
-                                    <tr><th> Title </th><td> {{ $post->title }} </td></tr><tr><th> Content </th><td> {{ $post->content }} </td></tr><tr><th> Seats </th><td> {{ $post->seats }} </td></tr>
+                                    {{--<tr>--}}
+                                        {{--<th>ID</th><td>{{ $post->id }}</td>--}}
+                                    {{--</tr>--}}
+                                   <tr><th> Content </th><td> {{ $post->content }} </td></tr><tr><th> Seats </th><td> {{ $post->seats }} </td></tr>
                                 </tbody>
                             </table>
                         </div>
 
-                        @foreach($post->images as $img)
-                            <img
-                                class="img-fluid img-thumbnail"
-                                style="width: auto; height: 150px;"
 
-                            @if (substr($img->url, 0,5)==='https' )
-
-                                src="{{$img->url}}"
-                            @else
-                                src="{{ asset($img->url)}}"
-                            @endif
-                            >
-                        @endforeach
                         <h5> Comments</h5>
 
 {{--                        @if (!Auth::check())--}}
